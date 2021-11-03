@@ -12,10 +12,10 @@ const routes: Routes = [
     path: 'search/:game-search',
     component: HomeComponent,
   },
-  // {
-  //   path: 'details/:id',
-  //   component: DetailsComponent,
-  // },
+  {
+    path: 'details/:id',
+    component: DetailsComponent,
+  },
 ];
 
 @NgModule({

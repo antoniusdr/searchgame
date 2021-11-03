@@ -1,1 +1,34 @@
-<p>details works!</p>
+<div class="details">
+  <div class="game-banner">
+    <img
+      class="game-banner-img"
+      src="https://image.shutterstock.com/image-vector/video-game-neon-text-console-260nw-1211187022.jpg"
+      alt="game-banner-image"
+    />
+  </div>
+  <div class="game-content">
+    <div class="details-wrapper">
+      <div class="game-header">
+        <h1 class="game-header-title">Game name</h1>
+        <h2 class="game-header-release-date">Release date</h2>
+        <p class="game-header-genres">
+          <span>RPG</span>
+        </p>
+        <div class="game-gauge">
+          <mwl-gauge
+            class="two"
+            [max]="100"
+            [dialStartAngle]="180"
+            [dialEndAngle]="0"
+            [value]="gameRating"
+            [animated]="true"
+            [color]="getColor"
+            [animationDuration]="2"
+          >
+          </mwl-gauge>
+          <a class="game-gauge-label" target="_blank" href="">Metacritic</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
